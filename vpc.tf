@@ -9,7 +9,7 @@ module "vpc" {
 	enable-dns-hostnames = "true"
 	vpc-name = "TerraLab-vpc"
 	vpc-location = "Ohio"
-	region = "eu-east-2"
+	region = "us-east-2"
 	internet-gateway-name = "TerraLab-igw"
 	map_public_ip_on_launch = "true"
 	public-subnets-name = "public-subnets"
@@ -23,6 +23,6 @@ module "vpc" {
 	private-route-cidr = "0.0.0.0/0"
 	private-route-name = "private-route"
 	vpc-cidr = "10.10.0.0/16"
-	vpc-public-subnet-cidr = ["10.10.1.0/24","10.10.2.0/24","10.10.3.0/24"]
-	vpc-private-subnet-cidr = ["10.10.4.0/24","10.10.5.0/24","10.10.6.0/24"]	
+	vpc-public-subnet-cidr = ["10.10.1.0/24","10.10.2.0/24"]
+	vpc-private-subnet-cidr = ["10.10.3.0/24","10.10.4.0/24"]	
 }
